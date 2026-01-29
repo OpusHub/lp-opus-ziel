@@ -8,6 +8,10 @@
     "start": "next start",
     "lint": "eslint"
   },
+  "browserslist": [
+    "defaults and fully supports es6-module",
+    "maintained node versions"
+  ],
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@radix-ui/react-tabs": "^1.1.13",
