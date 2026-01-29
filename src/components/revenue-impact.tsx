@@ -5,10 +5,12 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { TrendingUp, Database, Zap, DollarSign, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function RevenueImpact() {
+  const t = useTranslations('RevenueImpact');
   const sectionRef = useRef<HTMLElement | null>(null);
 
   useGSAP(
@@ -41,21 +43,21 @@ export default function RevenueImpact() {
   const revenueDrivers = [
     {
       iconType: 'database',
-      title: "Data-Driven Decision Making",
-      impact: "+45% Revenue",
-      description: "Real-time analytics and predictive models enable faster, more accurate business decisions. Companies reduce waste and capitalize on opportunities 3x faster."
+      title: t('drivers.dataDecision.title'),
+      impact: t('drivers.dataDecision.impact'),
+      description: t('drivers.dataDecision.description')
     },
     {
       iconType: 'zap',
-      title: "Operational Efficiency",
-      impact: "+60% Productivity",
-      description: "Automated data pipelines and ML-powered workflows eliminate manual work. Teams focus on high-value tasks while AI handles repetitive operations at scale."
+      title: t('drivers.efficiency.title'),
+      impact: t('drivers.efficiency.impact'),
+      description: t('drivers.efficiency.description')
     },
     {
       iconType: 'trending',
-      title: "Predictive Intelligence",
-      impact: "+95% Forecast Accuracy",
-      description: "ML models predict customer behavior, market trends, and operational issues. Prevent losses, optimize pricing, and capture market share before competitors."
+      title: t('drivers.predictive.title'),
+      impact: t('drivers.predictive.impact'),
+      description: t('drivers.predictive.description')
     }
   ];
 
@@ -74,38 +76,38 @@ export default function RevenueImpact() {
 
   const beforeAfter = [
     {
-      metric: "Monthly Revenue",
-      before: "$500K",
-      after: "$1.5M",
-      growth: "+200%"
+      metric: t('metrics.monthlyRevenue.label'),
+      before: t('metrics.monthlyRevenue.before'),
+      after: t('metrics.monthlyRevenue.after'),
+      growth: t('metrics.monthlyRevenue.growth')
     },
     {
-      metric: "Decision Speed",
-      before: "2-3 weeks",
-      after: "Real-time",
-      growth: "100x faster"
+      metric: t('metrics.decisionSpeed.label'),
+      before: t('metrics.decisionSpeed.before'),
+      after: t('metrics.decisionSpeed.after'),
+      growth: t('metrics.decisionSpeed.growth')
     },
     {
-      metric: "Data Processing",
-      before: "Manual",
-      after: "Automated",
-      growth: "99% reduction"
+      metric: t('metrics.dataProcessing.label'),
+      before: t('metrics.dataProcessing.before'),
+      after: t('metrics.dataProcessing.after'),
+      growth: t('metrics.dataProcessing.growth')
     },
     {
-      metric: "Market Response",
-      before: "Reactive",
-      after: "Predictive",
-      growth: "3-month lead"
+      metric: t('metrics.marketResponse.label'),
+      before: t('metrics.marketResponse.before'),
+      after: t('metrics.marketResponse.after'),
+      growth: t('metrics.marketResponse.growth')
     }
   ];
 
   const outcomes = [
-    "Identify high-value customers with 95% accuracy",
-    "Predict demand spikes 30 days in advance",
-    "Automate pricing optimization in real-time",
-    "Reduce operational costs by 40-60%",
-    "Launch new revenue streams from data monetization",
-    "Scale operations without proportional cost increase"
+    t('outcomes.0'),
+    t('outcomes.1'),
+    t('outcomes.2'),
+    t('outcomes.3'),
+    t('outcomes.4'),
+    t('outcomes.5')
   ];
 
   return (
@@ -131,18 +133,18 @@ export default function RevenueImpact() {
           <div className="animate-item mb-6 inline-flex items-center gap-2 rounded-full border border-green-500/20 bg-green-500/10 px-4 py-2 backdrop-blur-sm">
             <DollarSign className="w-4 h-4 text-green-400" />
             <span className="text-sm font-light uppercase tracking-[0.08em] text-green-400">
-              Revenue Impact
+              {t('badge')}
             </span>
           </div>
 
           <h2 className="animate-item mb-4 text-4xl font-extralight tracking-tight text-white sm:text-5xl md:text-6xl">
-            AI Infrastructure Can Increase<br />
+            {t('title')}<br />
             <span className="bg-gradient-to-r from-green-400 via-emerald-400 to-green-500 bg-clip-text text-transparent">
-              Revenue by up to 200%
+              {t('titleHighlight')}
             </span>
           </h2>
           <p className="animate-item mx-auto max-w-3xl text-base font-light leading-relaxed tracking-tight text-white/70 sm:text-lg">
-            When properly architected, AI infrastructure doesn&apos;t just optimize operations—it fundamentally transforms how companies generate revenue. Here&apos;s the data.
+            {t('description')}
           </p>
         </div>
 
@@ -150,7 +152,7 @@ export default function RevenueImpact() {
         <div className="animate-item mb-20">
           <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent p-8 backdrop-blur-sm md:p-12">
             <h3 className="mb-8 text-center text-2xl font-light text-white md:text-3xl">
-              Real Impact on Business Metrics
+              {t('metricsTitle')}
             </h3>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               {beforeAfter.map((item, index) => (
@@ -189,7 +191,7 @@ export default function RevenueImpact() {
         {/* Revenue Drivers */}
         <div className="mb-20">
           <h3 className="animate-item mb-12 text-center text-2xl font-light text-white md:text-3xl">
-            How AI Infrastructure Drives Revenue Growth
+            {t('driversTitle')}
           </h3>
           <div className="grid gap-8 md:grid-cols-3">
             {revenueDrivers.map((driver, index) => (
@@ -227,7 +229,7 @@ export default function RevenueImpact() {
         <div className="animate-item">
           <div className="rounded-2xl border border-white/10 bg-transparent p-8 backdrop-blur-sm md:p-12">
             <h3 className="mb-8 text-center text-2xl font-light text-white md:text-3xl">
-              What This Means for Your Business
+              {t('outcomesTitle')}
             </h3>
             <div className="grid gap-4 md:grid-cols-2">
               {outcomes.map((outcome, index) => (
@@ -246,13 +248,13 @@ export default function RevenueImpact() {
             {/* CTA */}
             <div className="mt-12 text-center">
               <p className="mb-6 text-lg font-light text-white">
-                Ready to 2-3x your revenue with AI infrastructure?
+                {t('ctaTitle')}
               </p>
               <a
                 href="#contact-form"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/5 px-8 py-4 text-base font-light tracking-tight text-white backdrop-blur-sm transition-all hover:border-blue-500/50 hover:bg-blue-500/10 focus:outline-none focus:ring-2 focus:ring-blue-500/30"
               >
-                Get Your Revenue Growth Assessment
+                {t('ctaButton')}
                 <ArrowRight className="h-5 w-5" />
               </a>
             </div>
@@ -262,3 +264,4 @@ export default function RevenueImpact() {
     </section>
   );
 }
+

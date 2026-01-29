@@ -6,6 +6,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowUpRight, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -32,78 +33,79 @@ export default function Showcase({
   sectionDescription,
   projects
 }: ShowcaseProps) {
+  const t = useTranslations('Showcase');
   const sectionRef = useRef<HTMLElement | null>(null);
   const titleRef = useRef<HTMLHeadingElement | null>(null);
   const descRef = useRef<HTMLParagraphElement | null>(null);
   const gridRef = useRef<HTMLDivElement | null>(null);
 
-  const finalTitle = sectionTitle || "Companies That Scaled with Our AI Infrastructure";
-  const finalDescription = sectionDescription || "Real infrastructure. Real data pipelines. Real revenue growth. See how we helped businesses build AI systems that process millions of records and generate measurable ROI.";
+  const finalTitle = sectionTitle || t('title');
+  const finalDescription = sectionDescription || t('description');
   const finalProjects = projects || [
     {
-      title: "Adidas - Demand Forecasting Data Pipeline",
-      description: "Engineered real-time data pipeline ingesting millions of sales records. Deployed ML models that predict regional demand with automated feature engineering and continuous model improvement.",
-      category: "MLOps & Data Engineering",
+      title: t('projects.adidas.title'),
+      description: t('projects.adidas.description'),
+      category: t('projects.adidas.category'),
       image: "/cases/adidas.svg",
       link: "/cases#adidas",
       stats: [
-        { label: "Forecast Accuracy", value: "92%" },
-        { label: "Revenue Impact", value: "+$4.2M" }
+        { label: t('projects.adidas.stat1Label'), value: t('projects.adidas.stat1Value') },
+        { label: t('projects.adidas.stat2Label'), value: t('projects.adidas.stat2Value') }
       ]
     },
     {
-      title: "L'Occitane - Customer Analytics Infrastructure",
-      description: "Built unified data warehouse integrating 5+ data sources. Implemented real-time BI dashboards and predictive models that identify high-value customers and optimize marketing spend.",
-      category: "Data Infrastructure & BI",
+      title: t('projects.loccitane.title'),
+      description: t('projects.loccitane.description'),
+      category: t('projects.loccitane.category'),
       image: "/cases/loccitane.svg",
       link: "/cases#loccitane",
       stats: [
-        { label: "Revenue Increase", value: "+34%" },
-        { label: "Data Sources Unified", value: "5+" }
+        { label: t('projects.loccitane.stat1Label'), value: t('projects.loccitane.stat1Value') },
+        { label: t('projects.loccitane.stat2Label'), value: t('projects.loccitane.stat2Value') }
       ]
     },
     {
-      title: "Arezzo - Production NLP System",
-      description: "Deployed scalable NLP infrastructure handling 10K+ daily conversations. Built custom language models with automated monitoring, A/B testing, and continuous improvement pipeline.",
-      category: "NLP Infrastructure",
+      title: t('projects.arezzo.title'),
+      description: t('projects.arezzo.description'),
+      category: t('projects.arezzo.category'),
       image: "/cases/arezzo.svg",
       link: "/cases#arezzo",
       stats: [
-        { label: "Queries/Day", value: "10K+" },
-        { label: "Automation Rate", value: "78%" }
+        { label: t('projects.arezzo.stat1Label'), value: t('projects.arezzo.stat1Value') },
+        { label: t('projects.arezzo.stat2Label'), value: t('projects.arezzo.stat2Value') }
       ]
     },
     {
-      title: "Vitrium Capital - Financial ML Platform",
-      description: "Architected ML infrastructure processing real-time market data. Deployed ensemble models for risk prediction with automated backtesting, feature engineering, and model versioning.",
-      category: "Financial ML Infrastructure",
+      title: t('projects.vitrium.title'),
+      description: t('projects.vitrium.description'),
+      category: t('projects.vitrium.category'),
       image: "/cases/vitrium.svg",
       link: "/cases#vitrium",
       stats: [
-        { label: "Prediction Accuracy", value: "89%" },
-        { label: "Analysis Speed", value: "10x faster" }
+        { label: t('projects.vitrium.stat1Label'), value: t('projects.vitrium.stat1Value') },
+        { label: t('projects.vitrium.stat2Label'), value: t('projects.vitrium.stat2Value') }
       ]
     },
     {
-      title: "Garbo Tecnologia - Health Tech AI Platform",
-      description: "Built complete AI infrastructure for health insurance operators. Deployed biometric anti-fraud system, automated claims processing, and real-time BI dashboards serving 2M+ beneficiaries.",
-      category: "Health Tech Infrastructure",
+      title: t('projects.garbo.title'),
+      description: t('projects.garbo.description'),
+      category: t('projects.garbo.category'),
       image: "/cases/garbo.svg",
       link: "/cases#garbo",
       stats: [
-        { label: "Fraud Blocked", value: "99.7%" },
-        { label: "Savings Generated", value: "R$120M" }
+        { label: t('projects.garbo.stat1Label'), value: t('projects.garbo.stat1Value') },
+        { label: t('projects.garbo.stat2Label'), value: t('projects.garbo.stat2Value') }
       ]
     },
     {
-      title: "GMV Odonto - Dental Clinic AI Automation",
-      description: "Developed AI-powered sales and patient management platform for dental clinics. Implemented 24/7 automated scheduling, intelligent follow-up, and patient reactivation systems.",
-      category: "AI Automation & Sales",
+      title: t('projects.gmvodonto.title'),
+      description: t('projects.gmvodonto.description'),
+      category: t('projects.gmvodonto.category'),
       image: "/cases/gmvodonto.svg",
       link: "/cases#gmvodonto",
       stats: [
-        { label: "Conversion Rate", value: "+47%" },
-        { label: "Patient Reactivation", value: "3x" }
+        { label: t('projects.gmvodonto.stat1Label'), value: t('projects.gmvodonto.stat1Value') },
+        { label: t('projects.gmvodonto.stat2Label'), value: t('projects.gmvodonto.stat2Value') }
       ]
     }
   ];

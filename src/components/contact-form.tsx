@@ -5,10 +5,12 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Send, CheckCircle2, AlertCircle } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function ContactForm() {
+    const t = useTranslations('ContactForm');
     const [formData, setFormData] = useState({
         name: "",
         company: "",
@@ -20,14 +22,14 @@ export default function ContactForm() {
     const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
     const revenueOptions = [
-        { label: "Pre-revenue", value: "Pre-revenue" },
-        { label: "< $100k", value: "< $100k" },
-        { label: "$100k - $500k", value: "$100k - $500k" },
-        { label: "$500k - $1M", value: "$500k - $1M" },
-        { label: "$1M - $5M", value: "$1M - $5M" },
-        { label: "$5M - $15M", value: "$5M - $15M" },
-        { label: "$15M - $30M", value: "$15M - $30M" },
-        { label: "> $30M", value: "> $30M" }
+        { label: t('revenueOptions.preRevenue'), value: "Pre-revenue" },
+        { label: t('revenueOptions.lessThan100k'), value: "< $100k" },
+        { label: t('revenueOptions.100kTo500k'), value: "$100k - $500k" },
+        { label: t('revenueOptions.500kTo1m'), value: "$500k - $1M" },
+        { label: t('revenueOptions.1mTo5m'), value: "$1M - $5M" },
+        { label: t('revenueOptions.5mTo15m'), value: "$5M - $15M" },
+        { label: t('revenueOptions.15mTo30m'), value: "$15M - $30M" },
+        { label: t('revenueOptions.moreThan30m'), value: "> $30M" }
     ];
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -87,10 +89,10 @@ export default function ContactForm() {
             <div className="max-w-4xl mx-auto relative z-10">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-5xl font-light text-white mb-6 tracking-tight">
-                        Ready to Build AI Infrastructure That Scales?
+                        {t('title')}
                     </h2>
                     <p className="text-lg md:text-xl font-light text-white/70 max-w-2xl mx-auto leading-relaxed">
-                        Stop experimenting with AI and start deploying it at scale. Let&apos;s architect the data infrastructure that will 10x your business.
+                        {t('description')}
                     </p>
                 </div>
 
@@ -100,20 +102,20 @@ export default function ContactForm() {
                             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-500/20 text-green-400 mb-6">
                                 <CheckCircle2 className="w-8 h-8" />
                             </div>
-                            <h3 className="text-2xl font-light text-white mb-4">Message Sent Successfully!</h3>
-                            <p className="text-white/60">We&apos;ll be in touch shortly to schedule your assessment.</p>
+                            <h3 className="text-2xl font-light text-white mb-4">{t('successTitle')}</h3>
+                            <p className="text-white/60">{t('successDescription')}</p>
                             <button
                                 onClick={() => setStatus("idle")}
                                 className="mt-8 text-sm text-blue-400 hover:text-blue-300 transition-colors"
                             >
-                                Send another message
+                                {t('sendAnother')}
                             </button>
                         </div>
                     ) : (
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <label htmlFor="name" className="text-sm font-light text-white/80 ml-1">Full Name</label>
+                                    <label htmlFor="name" className="text-sm font-light text-white/80 ml-1">{t('fields.name')}</label>
                                     <input
                                         type="text"
                                         id="name"
@@ -122,12 +124,12 @@ export default function ContactForm() {
                                         value={formData.name}
                                         onChange={handleChange}
                                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all"
-                                        placeholder="John Doe"
+                                        placeholder={t('fields.namePlaceholder')}
                                     />
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label htmlFor="company" className="text-sm font-light text-white/80 ml-1">Company Name</label>
+                                    <label htmlFor="company" className="text-sm font-light text-white/80 ml-1">{t('fields.company')}</label>
                                     <input
                                         type="text"
                                         id="company"
@@ -136,14 +138,14 @@ export default function ContactForm() {
                                         value={formData.company}
                                         onChange={handleChange}
                                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all"
-                                        placeholder="Acme Inc."
+                                        placeholder={t('fields.companyPlaceholder')}
                                     />
                                 </div>
                             </div>
 
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <label htmlFor="phone" className="text-sm font-light text-white/80 ml-1">Phone Number (with country code)</label>
+                                    <label htmlFor="phone" className="text-sm font-light text-white/80 ml-1">{t('fields.phone')}</label>
                                     <input
                                         type="tel"
                                         id="phone"
@@ -152,12 +154,12 @@ export default function ContactForm() {
                                         value={formData.phone}
                                         onChange={handleChange}
                                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all"
-                                        placeholder="+1 (555) 000-0000"
+                                        placeholder={t('fields.phonePlaceholder')}
                                     />
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label htmlFor="businessType" className="text-sm font-light text-white/80 ml-1">Industry / Business Type</label>
+                                    <label htmlFor="businessType" className="text-sm font-light text-white/80 ml-1">{t('fields.businessType')}</label>
                                     <input
                                         type="text"
                                         id="businessType"
@@ -166,13 +168,13 @@ export default function ContactForm() {
                                         value={formData.businessType}
                                         onChange={handleChange}
                                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all"
-                                        placeholder="e.g. Home Improvement, SaaS, Fintech"
+                                        placeholder={t('fields.businessTypePlaceholder')}
                                     />
                                 </div>
                             </div>
 
                             <div className="space-y-2">
-                                <label htmlFor="revenue" className="text-sm font-light text-white/80 ml-1">Monthly Revenue Range</label>
+                                <label htmlFor="revenue" className="text-sm font-light text-white/80 ml-1">{t('fields.revenue')}</label>
                                 <div className="relative">
                                     <select
                                         id="revenue"
@@ -182,7 +184,7 @@ export default function ContactForm() {
                                         onChange={handleChange}
                                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all"
                                     >
-                                        <option value="" disabled className="bg-neutral-900">Select your monthly revenue</option>
+                                        <option value="" disabled className="bg-neutral-900">{t('fields.revenueDefault')}</option>
                                         {revenueOptions.map((option) => (
                                             <option key={option.value} value={option.value} className="bg-neutral-900">
                                                 {option.label}
@@ -206,10 +208,10 @@ export default function ContactForm() {
                                     <span className="absolute inset-0 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 opacity-100 transition-opacity group-hover:opacity-100" />
                                     <div className="relative flex items-center justify-center gap-2 rounded-xl bg-black/20 backdrop-blur-sm px-8 py-4 text-lg font-medium text-white transition-all group-hover:bg-transparent">
                                         {status === "submitting" ? (
-                                            <span className="animate-pulse">Processing...</span>
+                                            <span className="animate-pulse">{t('processing')}</span>
                                         ) : (
                                             <>
-                                                Schedule Infrastructure Assessment
+                                                {t('submitButton')}
                                                 <Send className="w-4 h-4" />
                                             </>
                                         )}

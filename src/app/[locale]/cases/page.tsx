@@ -9,6 +9,7 @@ import Header from '@/components/header';
 import MetricChart from '@/components/charts/metric-chart';
 import ComparisonChart from '@/components/charts/comparison-chart';
 import Footer from '@/components/footer';
+import { useTranslations } from 'next-intl';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -37,6 +38,8 @@ interface CaseStudy {
 }
 
 export default function CasesPage() {
+  const t = useTranslations('Showcase');
+
   const [expandedCase, setExpandedCase] = useState<string | null>(null);
 
   const heroRef = useRef<HTMLElement | null>(null);
@@ -62,8 +65,8 @@ export default function CasesPage() {
     {
       id: 'adidas',
       company: 'Adidas',
-      title: 'Adidas - AI Demand Forecasting',
-      category: 'Machine Learning',
+      title: t('projects.adidas.title'),
+      category: t('projects.adidas.category'),
       image: '/cases/adidas.svg',
       duration: '6 months',
       challenge: 'Adidas faced significant challenges with stagnant inventory and losses due to inadequate demand forecasting by region. Unsold collections generated losses and occupied warehouse space.',
@@ -76,11 +79,11 @@ export default function CasesPage() {
         'Team training and continuous adjustments'
       ],
       results: {
-        description: 'The results exceeded expectations, with significant reduction in stagnant inventory and improved operational efficiency.',
+        description: t('projects.adidas.description'),
         metrics: [
-          { label: 'Forecast Accuracy', value: '92%', change: '+38%' },
+          { label: t('projects.adidas.stat1Label'), value: t('projects.adidas.stat1Value'), change: '+38%' },
           { label: 'Stagnant Stock Reduction', value: '47%', change: '-47%' },
-          { label: 'Profit Increase', value: '28%', change: '+28%' }
+          { label: t('projects.adidas.stat2Label'), value: t('projects.adidas.stat2Value'), change: '+28%' }
         ]
       },
       chartData: {
@@ -102,8 +105,8 @@ export default function CasesPage() {
     {
       id: 'loccitane',
       company: "L'Occitane",
-      title: "L'Occitane - Customer Behavior BI",
-      category: 'Business Intelligence',
+      title: t('projects.loccitane.title'),
+      category: t('projects.loccitane.category'),
       image: '/cases/loccitane.svg',
       duration: '4 months',
       challenge: "L'Occitane needed to integrate e-commerce and physical store data to understand the complete customer journey and effectively personalize offers.",
@@ -116,9 +119,9 @@ export default function CasesPage() {
         'Interactive dashboards for marketing teams'
       ],
       results: {
-        description: 'Data integration generated valuable insights that significantly boosted conversions and average ticket.',
+        description: t('projects.loccitane.description'),
         metrics: [
-          { label: 'Conversion Increase', value: '34%', change: '+34%' },
+          { label: t('projects.loccitane.stat1Label'), value: t('projects.loccitane.stat1Value'), change: '+34%' },
           { label: 'Average Ticket', value: '28%', change: '+28%' },
           { label: 'Customer Retention', value: '42%', change: '+42%' }
         ]
@@ -140,8 +143,8 @@ export default function CasesPage() {
     {
       id: 'arezzo',
       company: 'Arezzo',
-      title: 'Arezzo - AI Customer Service Chatbot',
-      category: 'AI Automation',
+      title: t('projects.arezzo.title'),
+      category: t('projects.arezzo.category'),
       image: '/cases/arezzo.svg',
       duration: '5 months',
       challenge: 'Arezzo sought to automate customer service, reduce response time, and offer 24/7 support without compromising service quality.',
@@ -154,9 +157,9 @@ export default function CasesPage() {
         'Sentiment analysis for continuous improvement'
       ],
       results: {
-        description: 'The chatbot transformed the customer experience, automating most interactions with high satisfaction.',
+        description: t('projects.arezzo.description'),
         metrics: [
-          { label: 'Automated Interactions', value: '78%', change: '+78%' },
+          { label: t('projects.arezzo.stat2Label'), value: t('projects.arezzo.stat2Value'), change: '+78%' },
           { label: 'Customer Satisfaction', value: '4.6/5', change: '+23%' },
           { label: 'Cost Reduction', value: '52%', change: '-52%' }
         ]
@@ -179,8 +182,8 @@ export default function CasesPage() {
     {
       id: 'vitrium',
       company: 'Vitrium Capital',
-      title: 'Vitrium Capital - Predictive Investment Analysis',
-      category: 'Business Intelligence',
+      title: t('projects.vitrium.title'),
+      category: t('projects.vitrium.category'),
       image: '/cases/vitrium.svg',
       duration: '8 months',
       challenge: 'Vitrium Capital needed more precise predictive analytics for risk assessment and personalized investment recommendations for their clients.',
@@ -193,9 +196,9 @@ export default function CasesPage() {
         'Real-time executive dashboards'
       ],
       results: {
-        description: 'The platform revolutionized how Vitrium analyzes investments, increasing precision and dramatically reducing analysis time.',
+        description: t('projects.vitrium.description'),
         metrics: [
-          { label: 'Forecast Precision', value: '89%', change: '+35%' },
+          { label: t('projects.vitrium.stat1Label'), value: t('projects.vitrium.stat1Value'), change: '+35%' },
           { label: 'Time Reduction', value: '65%', change: '-65%' },
           { label: 'Avg Client ROI', value: '31%', change: '+31%' }
         ]
@@ -217,8 +220,8 @@ export default function CasesPage() {
     {
       id: 'garbo',
       company: 'Garbo Tecnologia',
-      title: 'Garbo Tecnologia - Health Tech AI Platform',
-      category: 'Health Tech Infrastructure',
+      title: t('projects.garbo.title'),
+      category: t('projects.garbo.category'),
       image: '/cases/garbo.svg',
       duration: '12 months',
       challenge: 'Health insurance operators in Brazil faced massive fraud losses, slow authorization processes, and fragmented systems that couldn\'t scale to serve millions of beneficiaries efficiently.',
@@ -232,10 +235,10 @@ export default function CasesPage() {
         'Real-time operational BI dashboards'
       ],
       results: {
-        description: 'The platform transformed how health operators manage fraud and operations, achieving industry-leading security and massive cost savings across 50+ operators.',
+        description: t('projects.garbo.description'),
         metrics: [
-          { label: 'Fraud Blocked', value: '99.7%', change: '+99.7%' },
-          { label: 'Savings Generated', value: 'R$120M', change: '+R$120M' },
+          { label: t('projects.garbo.stat1Label'), value: t('projects.garbo.stat1Value'), change: '+99.7%' },
+          { label: t('projects.garbo.stat2Label'), value: t('projects.garbo.stat2Value'), change: '+R$120M' },
           { label: 'Authorization Time', value: '-90%', change: '-90%' }
         ]
       },
@@ -256,8 +259,8 @@ export default function CasesPage() {
     {
       id: 'gmvodonto',
       company: 'GMV Odonto',
-      title: 'GMV Odonto - Dental Clinic AI Automation',
-      category: 'AI Automation & Sales',
+      title: t('projects.gmvodonto.title'),
+      category: t('projects.gmvodonto.category'),
       image: '/cases/gmvodonto.svg',
       duration: '6 months',
       challenge: 'Dental clinics were losing revenue not from lack of patients, but from poor infrastructure: missed follow-ups, inefficient scheduling, lost leads, and no systematic approach to patient reactivation and sales.',
@@ -271,10 +274,10 @@ export default function CasesPage() {
         'Continuous strategic direction and operational support'
       ],
       results: {
-        description: 'The platform transformed clinic operations into predictable and profitable structures, dramatically improving conversion rates and reactivating dormant patient bases within 90 days.',
+        description: t('projects.gmvodonto.description'),
         metrics: [
-          { label: 'Conversion Rate', value: '+47%', change: '+47%' },
-          { label: 'Patient Reactivation', value: '3x', change: '+200%' },
+          { label: t('projects.gmvodonto.stat1Label'), value: t('projects.gmvodonto.stat1Value'), change: '+47%' },
+          { label: t('projects.gmvodonto.stat2Label'), value: t('projects.gmvodonto.stat2Value'), change: '+200%' },
           { label: 'Revenue Growth', value: '+62%', change: '+62%' }
         ]
       },

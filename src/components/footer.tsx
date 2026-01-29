@@ -6,10 +6,12 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Linkedin, Instagram, Mail, Phone, MessageCircle } from 'lucide-react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function Footer() {
+  const t = useTranslations('Footer');
   const footerRef = useRef<HTMLElement | null>(null);
 
   useGSAP(
@@ -59,13 +61,13 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm font-light text-white/60 leading-relaxed">
-              Saving companies from digital extinction with cutting-edge technology.
+              {t('tagline')}
             </p>
           </div>
 
           {/* Redes Sociais */}
           <div className="footer-item">
-            <h3 className="text-base font-light text-white mb-4">Social Media</h3>
+            <h3 className="text-base font-light text-white mb-4">{t('socialMedia')}</h3>
             <div className="space-y-3">
               <a
                 href="https://www.linkedin.com/company/zielhub"
@@ -90,7 +92,7 @@ export default function Footer() {
 
           {/* Contato */}
           <div className="footer-item">
-            <h3 className="text-base font-light text-white mb-4">Contact</h3>
+            <h3 className="text-base font-light text-white mb-4">{t('contact')}</h3>
             <div className="space-y-3">
               <a
                 href="mailto:contato@zielhub.com"
@@ -124,7 +126,7 @@ export default function Footer() {
               © {new Date().getFullYear()} ZielHub
             </p>
             <p className="text-xs font-light text-white/40 mt-2">
-              All rights reserved.
+              {t('allRightsReserved')}
             </p>
           </div>
         </div>
@@ -132,10 +134,11 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="footer-item border-t border-white/10 pt-6">
           <p className="text-center text-xs font-light text-white/40">
-            Made with cutting-edge technology by ZielHub
+            {t('madeWith')}
           </p>
         </div>
       </div>
     </footer>
   );
 }
+

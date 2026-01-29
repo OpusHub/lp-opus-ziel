@@ -192,6 +192,11 @@ export default function Header({
             {/* Logo */}
             <Logo width={36} height={36} />
 
+            {/* Mobile Language Switcher - CENTER */}
+            <div className="md:hidden">
+              <LanguageSwitcher />
+            </div>
+
             {/* Desktop Navigation */}
             <ul className="hidden items-center gap-8 md:flex">
               {finalNavItems.map((item, index) => {
