@@ -18,7 +18,7 @@ export default function MetaPixel() {
     return (
         <Script
             id="meta-pixel"
-            strategy="afterInteractive"
+            strategy="lazyOnload"
             onLoad={() => setIsLoaded(true)}
         >
             {`

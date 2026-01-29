@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useMemo } from 'react';
+import { useRef, useMemo, useState, useEffect } from 'react';
 import { Canvas, useFrame, extend } from '@react-three/fiber';
 import { shaderMaterial } from '@react-three/drei';
 import * as THREE from 'three';
@@ -197,6 +197,17 @@ function ShaderPlane() {
 
 function ShaderBackground() {
   const canvasRef = useRef<HTMLDivElement | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const camera = useMemo(() => ({ position: [0, 0, 1] as [number, number, number], fov: 75, near: 0.1, far: 1000 }), []);
 
@@ -224,14 +235,18 @@ function ShaderBackground() {
 
   return (
     <div ref={canvasRef} className="bg-black absolute inset-0 -z-10 w-full h-full" aria-hidden>
-      <Canvas
-        camera={camera}
-        gl={{ antialias: true, alpha: false }}
-        dpr={[1, 2]}
-        style={{ width: '100%', height: '100%' }}
-      >
-        <ShaderPlane />
-      </Canvas>
+      {!isMobile ? (
+        <Canvas
+          camera={camera}
+          gl={{ antialias: false, alpha: false, powerPreference: "high-performance" }}
+          dpr={[1, 1.5]} // Reduced max DPR for better performance
+          style={{ width: '100%', height: '100%' }}
+        >
+          <ShaderPlane />
+        </Canvas>
+      ) : (
+        <div className="absolute inset-0 bg-gradient-to-br from-[#030511] via-[#051125] to-[#002239]" />
+      )}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/20" />
     </div>
   );
