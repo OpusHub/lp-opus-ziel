@@ -1,0 +1,258 @@
+{
+    "Header": {
+        "home": "Home",
+        "whatWeDo": "What we do",
+        "showcase": "Showcase",
+        "about": "About",
+        "getStarted": "Get started"
+    },
+    "Hero": {
+        "title": "Build AI Infrastructure That Turns Data Into Revenue",
+        "description": "We engineer the AI backbone that makes companies scale. Custom data pipelines, production-ready ML models, and BI systems that transform raw data into millions in revenue.",
+        "cta1": "Build My AI Infrastructure",
+        "cta2": "See How We Scale Companies",
+        "detail1": "Enterprise-Grade AI Infrastructure",
+        "detail2": "Data Pipelines That Scale to Billions",
+        "detail3": "ML Models That Generate Real Revenue"
+    },
+    "WhatWeDo": {
+        "title": "AI Infrastructure That Makes Companies Unstoppable",
+        "description": "We don't just implement AI — we build the infrastructure that lets you scale it. From data pipelines to production-ready ML models, we turn your data into revenue-generating assets.",
+        "services": {
+            "aiInfrastructure": {
+                "title": "AI Infrastructure",
+                "description": "We build the foundation for your company to scale with AI. Custom infrastructure that processes millions of data points, trains proprietary models, and integrates seamlessly with your existing systems."
+            },
+            "dataPipeline": {
+                "title": "Data Pipeline Engineering",
+                "description": "Turn raw data into competitive advantage. We design and implement data pipelines that collect, process, and transform your business data into actionable insights in real-time."
+            },
+            "predictiveAnalytics": {
+                "title": "Predictive Analytics & BI",
+                "description": "Stop guessing, start knowing. Our Business Intelligence solutions predict market trends, customer behavior, and operational bottlenecks before they happen. Make data-driven decisions that multiply revenue."
+            },
+            "mlops": {
+                "title": "Machine Learning Operations (MLOps)",
+                "description": "Deploy, monitor, and scale AI models in production. We implement MLOps practices that ensure your AI systems are reliable, performant, and continuously improving."
+            },
+            "customAI": {
+                "title": "Custom AI Solutions",
+                "description": "Your business is unique, your AI should be too. We develop custom machine learning models, computer vision systems, and NLP solutions tailored to solve your specific challenges."
+            },
+            "dataMonetization": {
+                "title": "Data Monetization Strategy",
+                "description": "Your data is sitting on a goldmine. We help you identify, extract, and monetize value from your data assets. Turn information into new revenue streams."
+            }
+        }
+    },
+    "RevenueImpact": {
+        "badge": "Revenue Impact",
+        "title": "AI Infrastructure Can Increase",
+        "titleHighlight": "Revenue by up to 200%",
+        "description": "When properly architected, AI infrastructure doesn't just optimize operations—it fundamentally transforms how companies generate revenue. Here's the data.",
+        "metricsTitle": "Real Impact on Business Metrics",
+        "metrics": {
+            "monthlyRevenue": {
+                "label": "Monthly Revenue",
+                "before": "$500K",
+                "after": "$1.5M",
+                "growth": "+200%"
+            },
+            "decisionSpeed": {
+                "label": "Decision Speed",
+                "before": "2-3 weeks",
+                "after": "Real-time",
+                "growth": "100x faster"
+            },
+            "dataProcessing": {
+                "label": "Data Processing",
+                "before": "Manual",
+                "after": "Automated",
+                "growth": "99% reduction"
+            },
+            "marketResponse": {
+                "label": "Market Response",
+                "before": "Reactive",
+                "after": "Predictive",
+                "growth": "3-month lead"
+            }
+        },
+        "driversTitle": "How AI Infrastructure Drives Revenue Growth",
+        "drivers": {
+            "dataDecision": {
+                "title": "Data-Driven Decision Making",
+                "impact": "+45% Revenue",
+                "description": "Real-time analytics and predictive models enable faster, more accurate business decisions. Companies reduce waste and capitalize on opportunities 3x faster."
+            },
+            "efficiency": {
+                "title": "Operational Efficiency",
+                "impact": "+60% Productivity",
+                "description": "Automated data pipelines and ML-powered workflows eliminate manual work. Teams focus on high-value tasks while AI handles repetitive operations at scale."
+            },
+            "predictive": {
+                "title": "Predictive Intelligence",
+                "impact": "+95% Forecast Accuracy",
+                "description": "ML models predict customer behavior, market trends, and operational issues. Prevent losses, optimize pricing, and capture market share before competitors."
+            }
+        },
+        "outcomesTitle": "What This Means for Your Business",
+        "outcomes": [
+            "Identify high-value customers with 95% accuracy",
+            "Predict demand spikes 30 days in advance",
+            "Automate pricing optimization in real-time",
+            "Reduce operational costs by 40-60%",
+            "Launch new revenue streams from data monetization",
+            "Scale operations without proportional cost increase"
+        ],
+        "ctaTitle": "Ready to 2-3x your revenue with AI infrastructure?",
+        "ctaButton": "Get Your Revenue Growth Assessment"
+    },
+    "Showcase": {
+        "title": "Companies That Scaled with Our AI Infrastructure",
+        "description": "Real infrastructure. Real data pipelines. Real revenue growth. See how we helped businesses build AI systems that process millions of records and generate measurable ROI.",
+        "viewAll": "View all transformations",
+        "projects": {
+            "adidas": {
+                "title": "Adidas - Demand Forecasting Data Pipeline",
+                "description": "Engineered real-time data pipeline ingesting millions of sales records. Deployed ML models that predict regional demand with automated feature engineering and continuous model improvement.",
+                "category": "MLOps & Data Engineering",
+                "stat1Label": "Forecast Accuracy",
+                "stat1Value": "92%",
+                "stat2Label": "Revenue Impact",
+                "stat2Value": "+$4.2M"
+            },
+            "loccitane": {
+                "title": "L'Occitane - Customer Analytics Infrastructure",
+                "description": "Built unified data warehouse integrating 5+ data sources. Implemented real-time BI dashboards and predictive models that identify high-value customers and optimize marketing spend.",
+                "category": "Data Infrastructure & BI",
+                "stat1Label": "Revenue Increase",
+                "stat1Value": "+34%",
+                "stat2Label": "Data Sources Unified",
+                "stat2Value": "5+"
+            },
+            "arezzo": {
+                "title": "Arezzo - Production NLP System",
+                "description": "Deployed scalable NLP infrastructure handling 10K+ daily conversations. Built custom language models with automated monitoring, A/B testing, and continuous improvement pipeline.",
+                "category": "NLP Infrastructure",
+                "stat1Label": "Queries/Day",
+                "stat1Value": "10K+",
+                "stat2Label": "Automation Rate",
+                "stat2Value": "78%"
+            },
+            "vitrium": {
+                "title": "Vitrium Capital - Financial ML Platform",
+                "description": "Architected ML infrastructure processing real-time market data. Deployed ensemble models for risk prediction with automated backtesting, feature engineering, and model versioning.",
+                "category": "Financial ML Infrastructure",
+                "stat1Label": "Prediction Accuracy",
+                "stat1Value": "89%",
+                "stat2Label": "Analysis Speed",
+                "stat2Value": "10x faster"
+            },
+            "garbo": {
+                "title": "Garbo Tecnologia - Health Tech AI Platform",
+                "description": "Built complete AI infrastructure for health insurance operators. Deployed biometric anti-fraud system, automated claims processing, and real-time BI dashboards serving 2M+ beneficiaries.",
+                "category": "Health Tech Infrastructure",
+                "stat1Label": "Fraud Blocked",
+                "stat1Value": "99.7%",
+                "stat2Label": "Savings Generated",
+                "stat2Value": "R$120M"
+            },
+            "gmvodonto": {
+                "title": "GMV Odonto - Dental Clinic AI Automation",
+                "description": "Developed AI-powered sales and patient management platform for dental clinics. Implemented 24/7 automated scheduling, intelligent follow-up, and patient reactivation systems.",
+                "category": "AI Automation & Sales",
+                "stat1Label": "Conversion Rate",
+                "stat1Value": "+47%",
+                "stat2Label": "Patient Reactivation",
+                "stat2Value": "3x"
+            }
+        }
+    },
+    "GlobalPresence": {
+        "badge": "Global Presence",
+        "title": "Connected worldwide",
+        "description": "Our global presence allows us to serve clients across different time zones and cultures, offering support and expertise wherever you need it.",
+        "countries": "Countries",
+        "continents": "Continents",
+        "support": "Support",
+        "countryNames": {
+            "usa": "United States",
+            "brazil": "Brazil",
+            "germany": "Germany",
+            "portugal": "Portugal",
+            "switzerland": "Switzerland"
+        }
+    },
+    "About": {
+        "badge": "Engineering Excellence",
+        "heroTitle": "We Build the AI Infrastructure That Companies Need to Dominate Their Markets",
+        "heroDescription": "Most companies fail at AI because they lack proper infrastructure. We engineer scalable data pipelines, deploy production-grade ML systems, and build BI platforms that turn raw data into competitive advantages.",
+        "missionTitle": "Our Mission",
+        "missionDescription": "Build world-class AI infrastructure for ambitious companies. We bridge the gap between data science aspirations and production reality, delivering systems that scale from prototype to billions of data points.",
+        "visionTitle": "How We Work",
+        "visionDescription": "First, we audit your data ecosystem. Then we architect the infrastructure. Finally, we deploy production-ready systems with your team. No black boxes. No vendor lock-in. Just robust AI infrastructure that your engineers can own and evolve.",
+        "valuesTitle": "Our Engineering Principles",
+        "values": {
+            "productionReady": {
+                "title": "Production-Ready Infrastructure",
+                "description": "We don't build demos or proofs of concept. Every solution we deliver is production-ready, scalable, and built to handle enterprise-grade workloads from day one."
+            },
+            "dataFirst": {
+                "title": "Data-First Approach",
+                "description": "Great AI starts with great data. We audit your data quality, build robust pipelines, and establish governance frameworks that ensure your AI models have clean, reliable inputs."
+            },
+            "roiFocused": {
+                "title": "ROI-Focused Implementation",
+                "description": "Every project is measured by business impact, not technical metrics. We focus on solutions that directly increase revenue, reduce costs, or unlock new market opportunities."
+            },
+            "knowledgeTransfer": {
+                "title": "Transfer of Knowledge",
+                "description": "We don't just build systems and leave. We train your team, document everything, and ensure your company has the expertise to maintain and evolve the infrastructure independently."
+            }
+        },
+        "stats": {
+            "aiSystems": "AI Systems in Production",
+            "dataPoints": "Data Points Processed Monthly",
+            "years": "Years Building AI Infrastructure",
+            "accuracy": "Average Model Accuracy"
+        }
+    },
+    "ContactForm": {
+        "title": "Ready to Build AI Infrastructure That Scales?",
+        "description": "Stop experimenting with AI and start deploying it at scale. Let's architect the data infrastructure that will 10x your business.",
+        "successTitle": "Message Sent Successfully!",
+        "successDescription": "We'll be in touch shortly to schedule your assessment.",
+        "sendAnother": "Send another message",
+        "fields": {
+            "name": "Full Name",
+            "namePlaceholder": "John Doe",
+            "company": "Company Name",
+            "companyPlaceholder": "Acme Inc.",
+            "phone": "Phone Number (with country code)",
+            "phonePlaceholder": "+1 (555) 000-0000",
+            "businessType": "Industry / Business Type",
+            "businessTypePlaceholder": "e.g. Home Improvement, SaaS, Fintech",
+            "revenue": "Monthly Revenue Range",
+            "revenueDefault": "Select your monthly revenue"
+        },
+        "revenueOptions": {
+            "preRevenue": "Pre-revenue",
+            "lessThan100k": "< $100k",
+            "100kTo500k": "$100k - $500k",
+            "500kTo1m": "$500k - $1M",
+            "1mTo5m": "$1M - $5M",
+            "5mTo15m": "$5M - $15M",
+            "15mTo30m": "$15M - $30M",
+            "moreThan30m": "> $30M"
+        },
+        "submitButton": "Schedule Infrastructure Assessment",
+        "processing": "Processing..."
+    },
+    "Footer": {
+        "tagline": "Saving companies from digital extinction with cutting-edge technology.",
+        "socialMedia": "Social Media",
+        "contact": "Contact",
+        "allRightsReserved": "All rights reserved.",
+        "madeWith": "Made with cutting-edge technology by ZielHub"
+    }
+}

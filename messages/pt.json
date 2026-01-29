@@ -1,0 +1,258 @@
+{
+    "Header": {
+        "home": "Início",
+        "whatWeDo": "O que fazemos",
+        "showcase": "Cases",
+        "about": "Sobre",
+        "getStarted": "Começar"
+    },
+    "Hero": {
+        "title": "Construa Infraestrutura de IA que Transforma Dados em Receita",
+        "description": "Desenvolvemos a espinha dorsal de IA que faz empresas escalarem. Pipelines de dados customizados, modelos de ML prontos para produção e sistemas de BI que transformam dados brutos em milhões em receita.",
+        "cta1": "Construir Minha Infraestrutura de IA",
+        "cta2": "Veja Como Escalamos Empresas",
+        "detail1": "Infraestrutura de IA Nível Enterprise",
+        "detail2": "Pipelines de Dados que Escalam para Bilhões",
+        "detail3": "Modelos de ML que Geram Receita Real"
+    },
+    "WhatWeDo": {
+        "title": "Infraestrutura de IA que Torna Empresas Imparáveis",
+        "description": "Não apenas implementamos IA — construímos a infraestrutura que permite escalá-la. De pipelines de dados a modelos de ML prontos para produção, transformamos seus dados em ativos geradores de receita.",
+        "services": {
+            "aiInfrastructure": {
+                "title": "Infraestrutura de IA",
+                "description": "Construímos a base para sua empresa escalar com IA. Infraestrutura personalizada que processa milhões de pontos de dados, treina modelos proprietários e se integra perfeitamente aos seus sistemas existentes."
+            },
+            "dataPipeline": {
+                "title": "Engenharia de Pipelines de Dados",
+                "description": "Transforme dados brutos em vantagem competitiva. Projetamos e implementamos pipelines de dados que coletam, processam e transformam seus dados de negócio em insights acionáveis em tempo real."
+            },
+            "predictiveAnalytics": {
+                "title": "Analytics Preditivo & BI",
+                "description": "Pare de adivinhar, comece a saber. Nossas soluções de Business Intelligence preveem tendências de mercado, comportamento do cliente e gargalos operacionais antes que aconteçam. Tome decisões baseadas em dados que multiplicam receita."
+            },
+            "mlops": {
+                "title": "Machine Learning Operations (MLOps)",
+                "description": "Implante, monitore e escale modelos de IA em produção. Implementamos práticas de MLOps que garantem que seus sistemas de IA sejam confiáveis, performáticos e continuamente melhorando."
+            },
+            "customAI": {
+                "title": "Soluções de IA Customizadas",
+                "description": "Seu negócio é único, sua IA também deveria ser. Desenvolvemos modelos de machine learning customizados, sistemas de visão computacional e soluções de NLP sob medida para resolver seus desafios específicos."
+            },
+            "dataMonetization": {
+                "title": "Estratégia de Monetização de Dados",
+                "description": "Seus dados estão sentados em uma mina de ouro. Ajudamos você a identificar, extrair e monetizar valor dos seus ativos de dados. Transforme informação em novos fluxos de receita."
+            }
+        }
+    },
+    "RevenueImpact": {
+        "badge": "Impacto na Receita",
+        "title": "Infraestrutura de IA Pode Aumentar",
+        "titleHighlight": "Receita em até 200%",
+        "description": "Quando arquitetada corretamente, a infraestrutura de IA não apenas otimiza operações — ela transforma fundamentalmente como empresas geram receita. Veja os dados.",
+        "metricsTitle": "Impacto Real nas Métricas de Negócio",
+        "metrics": {
+            "monthlyRevenue": {
+                "label": "Receita Mensal",
+                "before": "R$2.5M",
+                "after": "R$7.5M",
+                "growth": "+200%"
+            },
+            "decisionSpeed": {
+                "label": "Velocidade de Decisão",
+                "before": "2-3 semanas",
+                "after": "Tempo real",
+                "growth": "100x mais rápido"
+            },
+            "dataProcessing": {
+                "label": "Processamento de Dados",
+                "before": "Manual",
+                "after": "Automatizado",
+                "growth": "99% de redução"
+            },
+            "marketResponse": {
+                "label": "Resposta ao Mercado",
+                "before": "Reativo",
+                "after": "Preditivo",
+                "growth": "3 meses de vantagem"
+            }
+        },
+        "driversTitle": "Como Infraestrutura de IA Impulsiona Crescimento de Receita",
+        "drivers": {
+            "dataDecision": {
+                "title": "Tomada de Decisão Baseada em Dados",
+                "impact": "+45% Receita",
+                "description": "Analytics em tempo real e modelos preditivos permitem decisões de negócio mais rápidas e precisas. Empresas reduzem desperdício e capitalizam oportunidades 3x mais rápido."
+            },
+            "efficiency": {
+                "title": "Eficiência Operacional",
+                "impact": "+60% Produtividade",
+                "description": "Pipelines de dados automatizados e workflows com ML eliminam trabalho manual. Equipes focam em tarefas de alto valor enquanto IA lida com operações repetitivas em escala."
+            },
+            "predictive": {
+                "title": "Inteligência Preditiva",
+                "impact": "+95% Precisão de Forecast",
+                "description": "Modelos de ML preveem comportamento do cliente, tendências de mercado e problemas operacionais. Previna perdas, otimize preços e capture market share antes dos concorrentes."
+            }
+        },
+        "outcomesTitle": "O Que Isso Significa Para Seu Negócio",
+        "outcomes": [
+            "Identifique clientes de alto valor com 95% de precisão",
+            "Preveja picos de demanda com 30 dias de antecedência",
+            "Automatize otimização de preços em tempo real",
+            "Reduza custos operacionais em 40-60%",
+            "Lance novos fluxos de receita com monetização de dados",
+            "Escale operações sem aumento proporcional de custos"
+        ],
+        "ctaTitle": "Pronto para 2-3x sua receita com infraestrutura de IA?",
+        "ctaButton": "Solicite Sua Avaliação de Crescimento"
+    },
+    "Showcase": {
+        "title": "Empresas que Escalaram com Nossa Infraestrutura de IA",
+        "description": "Infraestrutura real. Pipelines de dados reais. Crescimento de receita real. Veja como ajudamos empresas a construir sistemas de IA que processam milhões de registros e geram ROI mensurável.",
+        "viewAll": "Ver todas as transformações",
+        "projects": {
+            "adidas": {
+                "title": "Adidas - Pipeline de Previsão de Demanda",
+                "description": "Desenvolvemos pipeline de dados em tempo real ingerindo milhões de registros de vendas. Implantamos modelos de ML que preveem demanda regional com engenharia de features automatizada e melhoria contínua.",
+                "category": "MLOps & Engenharia de Dados",
+                "stat1Label": "Precisão do Forecast",
+                "stat1Value": "92%",
+                "stat2Label": "Impacto na Receita",
+                "stat2Value": "+R$21M"
+            },
+            "loccitane": {
+                "title": "L'Occitane - Infraestrutura de Analytics de Clientes",
+                "description": "Construímos data warehouse unificado integrando 5+ fontes de dados. Implementamos dashboards de BI em tempo real e modelos preditivos que identificam clientes de alto valor e otimizam gastos com marketing.",
+                "category": "Infraestrutura de Dados & BI",
+                "stat1Label": "Aumento de Receita",
+                "stat1Value": "+34%",
+                "stat2Label": "Fontes de Dados Unificadas",
+                "stat2Value": "5+"
+            },
+            "arezzo": {
+                "title": "Arezzo - Sistema NLP em Produção",
+                "description": "Implantamos infraestrutura NLP escalável processando 10K+ conversas diárias. Construímos modelos de linguagem customizados com monitoramento automatizado, testes A/B e pipeline de melhoria contínua.",
+                "category": "Infraestrutura NLP",
+                "stat1Label": "Consultas/Dia",
+                "stat1Value": "10K+",
+                "stat2Label": "Taxa de Automação",
+                "stat2Value": "78%"
+            },
+            "vitrium": {
+                "title": "Vitrium Capital - Plataforma de ML Financeiro",
+                "description": "Arquitetamos infraestrutura de ML processando dados de mercado em tempo real. Implantamos modelos ensemble para predição de risco com backtesting automatizado, engenharia de features e versionamento de modelos.",
+                "category": "Infraestrutura de ML Financeiro",
+                "stat1Label": "Precisão de Predição",
+                "stat1Value": "89%",
+                "stat2Label": "Velocidade de Análise",
+                "stat2Value": "10x mais rápido"
+            },
+            "garbo": {
+                "title": "Garbo Tecnologia - Plataforma de IA para Saúde",
+                "description": "Construímos infraestrutura completa de IA para operadoras de saúde. Implantamos sistema antifraude biométrico, processamento automatizado de sinistros e dashboards de BI em tempo real atendendo 2M+ beneficiários.",
+                "category": "Infraestrutura Health Tech",
+                "stat1Label": "Fraude Bloqueada",
+                "stat1Value": "99,7%",
+                "stat2Label": "Economia Gerada",
+                "stat2Value": "R$120M"
+            },
+            "gmvodonto": {
+                "title": "GMV Odonto - Automação de IA para Clínicas",
+                "description": "Desenvolvemos plataforma de vendas e gestão de pacientes com IA para clínicas odontológicas. Implementamos agendamento automatizado 24/7, follow-up inteligente e sistemas de reativação de pacientes.",
+                "category": "Automação de IA & Vendas",
+                "stat1Label": "Taxa de Conversão",
+                "stat1Value": "+47%",
+                "stat2Label": "Reativação de Pacientes",
+                "stat2Value": "3x"
+            }
+        }
+    },
+    "GlobalPresence": {
+        "badge": "Presença Global",
+        "title": "Conectados mundialmente",
+        "description": "Nossa presença global nos permite atender clientes em diferentes fusos horários e culturas, oferecendo suporte e expertise onde você precisar.",
+        "countries": "Países",
+        "continents": "Continentes",
+        "support": "Suporte",
+        "countryNames": {
+            "usa": "Estados Unidos",
+            "brazil": "Brasil",
+            "germany": "Alemanha",
+            "portugal": "Portugal",
+            "switzerland": "Suíça"
+        }
+    },
+    "About": {
+        "badge": "Excelência em Engenharia",
+        "heroTitle": "Construímos a Infraestrutura de IA que Empresas Precisam para Dominar Seus Mercados",
+        "heroDescription": "A maioria das empresas falha com IA porque não tem infraestrutura adequada. Desenvolvemos pipelines de dados escaláveis, implantamos sistemas de ML de nível produção e construímos plataformas de BI que transformam dados brutos em vantagens competitivas.",
+        "missionTitle": "Nossa Missão",
+        "missionDescription": "Construir infraestrutura de IA de classe mundial para empresas ambiciosas. Fazemos a ponte entre aspirações de data science e realidade de produção, entregando sistemas que escalam de protótipo a bilhões de pontos de dados.",
+        "visionTitle": "Como Trabalhamos",
+        "visionDescription": "Primeiro, auditamos seu ecossistema de dados. Depois arquitetamos a infraestrutura. Por fim, implantamos sistemas prontos para produção com seu time. Sem caixas pretas. Sem lock-in de fornecedor. Apenas infraestrutura robusta de IA que seus engenheiros podem dominar e evoluir.",
+        "valuesTitle": "Nossos Princípios de Engenharia",
+        "values": {
+            "productionReady": {
+                "title": "Infraestrutura Pronta para Produção",
+                "description": "Não construímos demos ou provas de conceito. Cada solução que entregamos está pronta para produção, é escalável e construída para lidar com cargas de trabalho enterprise desde o primeiro dia."
+            },
+            "dataFirst": {
+                "title": "Abordagem Data-First",
+                "description": "Ótima IA começa com ótimos dados. Auditamos a qualidade dos seus dados, construímos pipelines robustos e estabelecemos frameworks de governança que garantem que seus modelos de IA tenham inputs limpos e confiáveis."
+            },
+            "roiFocused": {
+                "title": "Implementação Focada em ROI",
+                "description": "Cada projeto é medido pelo impacto no negócio, não por métricas técnicas. Focamos em soluções que diretamente aumentam receita, reduzem custos ou desbloqueiam novas oportunidades de mercado."
+            },
+            "knowledgeTransfer": {
+                "title": "Transferência de Conhecimento",
+                "description": "Não apenas construímos sistemas e vamos embora. Treinamos seu time, documentamos tudo e garantimos que sua empresa tenha a expertise para manter e evoluir a infraestrutura de forma independente."
+            }
+        },
+        "stats": {
+            "aiSystems": "Sistemas de IA em Produção",
+            "dataPoints": "Pontos de Dados Processados/Mês",
+            "years": "Anos Construindo Infraestrutura de IA",
+            "accuracy": "Precisão Média dos Modelos"
+        }
+    },
+    "ContactForm": {
+        "title": "Pronto para Construir Infraestrutura de IA que Escala?",
+        "description": "Pare de experimentar com IA e comece a implantá-la em escala. Vamos arquitetar a infraestrutura de dados que vai 10x seu negócio.",
+        "successTitle": "Mensagem Enviada com Sucesso!",
+        "successDescription": "Entraremos em contato em breve para agendar sua avaliação.",
+        "sendAnother": "Enviar outra mensagem",
+        "fields": {
+            "name": "Nome Completo",
+            "namePlaceholder": "João Silva",
+            "company": "Nome da Empresa",
+            "companyPlaceholder": "Empresa Ltda.",
+            "phone": "Telefone (com código do país)",
+            "phonePlaceholder": "+55 (11) 99999-9999",
+            "businessType": "Setor / Tipo de Negócio",
+            "businessTypePlaceholder": "ex. Varejo, SaaS, Fintech",
+            "revenue": "Faixa de Faturamento Mensal",
+            "revenueDefault": "Selecione seu faturamento mensal"
+        },
+        "revenueOptions": {
+            "preRevenue": "Pré-faturamento",
+            "lessThan100k": "< R$500k",
+            "100kTo500k": "R$500k - R$2.5M",
+            "500kTo1m": "R$2.5M - R$5M",
+            "1mTo5m": "R$5M - R$25M",
+            "5mTo15m": "R$25M - R$75M",
+            "15mTo30m": "R$75M - R$150M",
+            "moreThan30m": "> R$150M"
+        },
+        "submitButton": "Agendar Avaliação de Infraestrutura",
+        "processing": "Processando..."
+    },
+    "Footer": {
+        "tagline": "Salvando empresas da extinção digital com tecnologia de ponta.",
+        "socialMedia": "Redes Sociais",
+        "contact": "Contato",
+        "allRightsReserved": "Todos os direitos reservados.",
+        "madeWith": "Feito com tecnologia de ponta pela ZielHub"
+    }
+}

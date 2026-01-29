@@ -8,6 +8,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Logo from './logo';
 import DynamicGradient from './dynamic-gradient';
+import LanguageSwitcher from './language-switcher';
 
 interface NavItem {
   label: string;
@@ -182,8 +183,8 @@ export default function Header({
       <header
         ref={headerRef}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-            ? 'bg-black/80 backdrop-blur-xl border-b border-white/10'
-            : 'bg-transparent'
+          ? 'bg-black/80 backdrop-blur-xl border-b border-white/10'
+          : 'bg-transparent'
           }`}
       >
         <nav className="mx-auto max-w-7xl px-6 md:px-10 lg:px-16">
@@ -234,6 +235,7 @@ export default function Header({
 
             {/* Desktop Actions */}
             <div className="hidden items-center gap-3 md:flex">
+              <LanguageSwitcher />
               {/* CTA Button */}
               <a
                 href={finalCtaHref === 'https://wa.me/5583991066066' ? '#contact-form' : finalCtaHref}
