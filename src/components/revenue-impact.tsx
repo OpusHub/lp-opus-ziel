@@ -156,7 +156,7 @@ export default function RevenueImpact() {
               {beforeAfter.map((item, index) => (
                 <div
                   key={index}
-                  className="group relative overflow-hidden rounded-xl border border-white/10 bg-transparent p-6 backdrop-blur-sm transition-all hover:border-blue-500/30"
+                  className="group relative overflow-hidden rounded-xl border border-white/10 bg-black/40 p-6 backdrop-blur-md transition-all hover:border-blue-500/30 hover:bg-black/50"
                 >
                   <div className="mb-3 text-sm font-light text-white/60">{item.metric}</div>
 
