@@ -156,7 +156,7 @@ export default function RevenueImpact() {
               {beforeAfter.map((item, index) => (
                 <div
                   key={index}
-                  className="group relative overflow-hidden rounded-xl border border-white/10 bg-black/40 p-6 backdrop-blur-sm transition-all hover:border-green-500/30 hover:bg-black/60"
+                  className="group relative overflow-hidden rounded-xl border border-white/10 bg-transparent p-6 backdrop-blur-sm transition-all hover:border-blue-500/30"
                 >
                   <div className="mb-3 text-sm font-light text-white/60">{item.metric}</div>
 
@@ -225,7 +225,7 @@ export default function RevenueImpact() {
 
         {/* Outcomes */}
         <div className="animate-item">
-          <div className="rounded-2xl border border-green-500/20 bg-gradient-to-br from-green-500/10 via-green-500/5 to-transparent p-8 backdrop-blur-sm md:p-12">
+          <div className="rounded-2xl border border-white/10 bg-transparent p-8 backdrop-blur-sm md:p-12">
             <h3 className="mb-8 text-center text-2xl font-light text-white md:text-3xl">
               What This Means for Your Business
             </h3>
@@ -233,7 +233,7 @@ export default function RevenueImpact() {
               {outcomes.map((outcome, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-3 rounded-xl border border-white/10 bg-black/20 p-4 backdrop-blur-sm"
+                  className="flex items-start gap-3 rounded-xl border border-white/10 bg-transparent p-4 backdrop-blur-sm transition-all hover:border-blue-500/20"
                 >
                   <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-400" />
                   <span className="text-sm font-light leading-relaxed text-white/80">
@@ -250,7 +250,7 @@ export default function RevenueImpact() {
               </p>
               <a
                 href="#contact-form"
-                className="inline-flex items-center gap-2 rounded-xl border border-green-500/30 bg-green-500/20 px-8 py-4 text-base font-light tracking-tight text-white backdrop-blur-sm transition-all hover:border-green-500/50 hover:bg-green-500/30 focus:outline-none focus:ring-2 focus:ring-green-500/30"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/5 px-8 py-4 text-base font-light tracking-tight text-white backdrop-blur-sm transition-all hover:border-blue-500/50 hover:bg-blue-500/10 focus:outline-none focus:ring-2 focus:ring-blue-500/30"
               >
                 Get Your Revenue Growth Assessment
                 <ArrowRight className="h-5 w-5" />
