@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="vitrium-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a5298;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#vitrium-grad)"/>
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="110" font-weight="bold" fill="#ffffff" text-anchor="middle">VITRIUM</text>
+  <text x="600" y="460" font-family="Arial, sans-serif" font-size="48" font-weight="300" fill="#ffffff" fill-opacity="0.8" text-anchor="middle">CAPITAL</text>
+  <text x="600" y="550" font-family="Arial, sans-serif" font-size="32" font-weight="300" fill="#ffffff" fill-opacity="0.7" text-anchor="middle">Análise Preditiva</text>
+  <polyline points="300,650 400,620 500,660 600,600 700,640 800,610 900,650" stroke="#4fc3f7" stroke-width="3" fill="none" opacity="0.6"/>
+</svg>
