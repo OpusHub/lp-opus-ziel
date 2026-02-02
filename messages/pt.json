@@ -236,7 +236,7 @@
             "revenueDefault": "Selecione seu faturamento mensal"
         },
         "revenueOptions": {
-            "preRevenue": "Pré-faturamento",
+            "preRevenue": "Ainda não possuo faturamento",
             "lessThan100k": "< R$500k",
             "100kTo500k": "R$500k - R$2.5M",
             "500kTo1m": "R$2.5M - R$5M",
